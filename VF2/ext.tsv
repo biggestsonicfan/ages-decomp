@@ -1,0 +1,107 @@
+ext	case	calls
+00	001b5eb8	
+01	001b56f0	sndPatSndReq
+02	001b5700	sndPatVoiceLoadCancel
+03	001b5710	sndPatVoiceLoadReq2
+04	001b5720	sndPatVoiceLoadWait2
+05	001b5730	sndPatVoiceLoadReq3
+06	001b5740	sndPatVoiceLoadWait3a
+07	001b5750	sndPatVoiceLoadWait3b
+08	001b5760	sndPatVoiceModifyParam
+09	001b5e78	sysGetProgCodeRomAddr i960GetRegs i960SetIPAddr
+0a	001b5770	sndPatVoiceLoadEndingReq1 i960SetReg
+0b	001b5790	sndPatVoiceLoadEndingWait1
+0c	001b57a0	sndPatVoiceLoadEndingReq2
+0d	001b57b0	sndPatVoiceLoadEndingWait2a
+0e	001b57c0	sndPatVoiceLoadEndingWait2b
+0f	001b57d0	sndPatVoiceLoadNameReq
+10	001b57e0	sndPatVoiceLoadNameWait
+11	001b5800	set_sound_port sound_req
+12	001b5818	menuPatchSePlayerEntryReq
+13	001b54b8	i960SetReg
+14	001b54d0	sysVf2GetWork i960SetReg
+15	001b5eb8	
+16	001b54f0	sysVf2GetWork i960SetReg i960AddNextIp i960CheckVint sysScrUpdateM2eWork
+17	001b5528	sysVf2GetWork i960SetReg i960AddNextIp i960CheckVint sysScrUpdateM2eWork
+18	001b5560	menuPatchAppStart
+19	001b5570	menuPatchSramCheckStart
+1a	001b5580	menuPatchSramCheckFinish i960Ret
+1b	001b5828	menuPatchMainMenuStart
+1c	001b5840	menuPatchMainMenuWait
+1d	001b5858	menuPatchMainMenuWait
+1e	001b5870	menuPatchSelInt
+1f	001b5880	iptSetHoldIptSw iptSetHoldIptSw menuPatchCheckExitSelPause
+20	001b58e8	menuPatchPauseMenuStart
+21	001b58c8	menuPatchPauseMenuWait sysIsExterntion
+22	001b58f8	menuPatchPauseMenuWait sysIsExterntion
+23	001b5918	menuPatchPaseSelExit
+24	001b5928	menuPatchVsResultStart
+25	001b5948	sysIsExterntion
+26	001b5960	menuPatchVsResultRetry
+27	001b5b40	i960SetIPAddr
+28	001b5b58	iptGetPer iptGetPer i960Ret
+29	001b59d8	menuPatchAdvSegaLogo
+2a	001b59e8	menuIsActive
+2b	001b5a28	menuPatchAdvVf2Logo1
+2c	001b5a38	menuIsActive
+2d	001b5a00	menuPatchAdvVf2Logo1Int
+2e	001b5a10	sysIsExterntion
+2f	001b5a78	menuPatchAdvVf2Logo2
+30	001b5a88	menuIsActive
+31	001b5aa0	menuPatchEndSegaLogo
+32	001b5ab0	sysIsExterntion
+33	001b5af8	menuPatchAdvMovieInt
+34	001b5b08	menuPatchSkipAdvWait
+35	001b5978	i960SetReg menuSetFlag
+36	001b5998	menuIsActive
+37	001b5ac8	menuPatchSetGameTime
+38	001b5ad8	menuPatchResetAdvReplay
+39	001b5b18	menuPatchRankingSave i960Ret
+3a	001b5b30	menuPatchSetAdvReplayTime
+3b	001b5b98	sysReadWorkRam4 iptGetPer iptGetPer i960SetReg
+3c	001b5d88	i960GetRegs i960SetIPAddr
+3d	001b5db8	menuPatchDuralUseCheck i960SetIPAddr
+3e	001b5de0	menuPatchDuralUseCheck i960SetIPAddr
+3f	001b5e08	menuPatchDuralSetTimer
+40	001b5598	sysVf2SendTexStage
+41	001b55b0	sysVf2SendTexEfc
+42	001b55c0	sysVf2SendTexRob
+43	001b55d8	sysVf2SendTexDone
+44	001b55e8	sysVf2PatchSendTexReq
+45	001b5600	sysVf2ChkResume
+46	001b5618	sysVf2ChkSuspend
+47	001b5630	sysVf2UnpackLodData
+48	001b5640	sysVf2SendBetaData
+49	001b5650	sysVf2SendLodData
+4a	001b5660	sysVf2SendLodDataQ
+4b	001b5c08	sysCopPatchSetOsageAfter
+4c	001b5c18	sysCopPatchSetObj
+4d	001b5c50	sysCopSetColiBallData
+4e	001b5c60	sysCopPatchColiContFast
+4f	001b5c70	sysCopPatchCalcUnitMat
+50	001b5c80	sysCopPatchGetFrameDat
+51	001b5c90	sysCopPatchSmoothInt
+52	001b5ca0	sysCopPatchOsageDsp
+53	001b5cb0	sysCopPatchHappaDisp
+54	001b5cc0	sysCopPatchRecogSample
+55	001b5cd0	i960SetReg
+56	001b5d60	i960SetReg
+57	001b5d78	i960Ret
+58	001b5c28	sysCopSetObjCommon
+59	001b5c38	sysCopSetObjSame
+5a	001b5ce8	
+5b	001b5cf8	sysReadWorkRam4 sysReadWorkRam4 sysMemReadW sysMemWriteW sysMemWriteW
+5c	001b5a50	menuPatchAdvVf2Logo2Int
+5d	001b5a60	sysIsExterntion
+5e	001b59b0	menuPatchAdvEnbuSegaLogoInt
+5f	001b59c0	sysIsExterntion
+60	001b5670	sysVf2CtrlLoading
+61	001b5688	sysVf2GetWork i960SetReg
+62	001b5eb8	
+63	001b5eb8	
+64	001b5e18	sysMemReadS sysMemWriteS i960Ret
+65	001b5e60	i960SetReg
+66	001b5eb8	
+67	001b56b8	i960SetReg
+68	001b56d0	menuPatchSelCheckDecide
+69	001b56e0	menuPatchSelCheckDecide
