@@ -21,15 +21,15 @@ undefined8 send_init_ram_coli_data(long param_1)
     bVar1 = false;
   }
   if (bVar1) {
-    FUN_001ec780(0);
+    rob1_coli_ball_table_all_init(0);
   }
   else {
-    FUN_001ec880(0);
+    rob0_coli_ball_table_all_init(0);
   }
-  FUN_001ec580(0);
+  set_coli_ball_init(0);
   send_coli_ball_R(0);
-  FUN_001ec380(0);
-  FUN_001ec180(0);
+  send_ball_to_unit(0);
+  send_ball_to_unit2(0);
   if (param_1 != 0) {
     i960ReturnProc();
   }

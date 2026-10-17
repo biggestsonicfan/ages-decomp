@@ -50,9 +50,9 @@ undefined8 rob_kage_disp_inside(long param_1)
     uStack_10 = 4;
   }
   if ((uStack_10 & 5) != 0) {
-    FUN_001f4880(0);
+    calc_near_light(0);
     auStack_20[0] = piVar3->g[0];
-    FUN_001f4600(0);
+    calc_ext_light_vec(0);
     if (piVar3->g[0] == 0) {
       uStack_10 = 2;
     }
@@ -67,7 +67,7 @@ undefined8 rob_kage_disp_inside(long param_1)
       FUN_0018df40(uVar1);
       FUN_0018df40(uVar2);
       piVar3->g[0] = auStack_20[0];
-      FUN_001f4180(0);
+      rob_kage_set_flag_inout(0);
       sysMemReadB(&cStack_4,piVar3->g[7] + 0x2a);
       if (cStack_4 == '\0') {
         uStack_10 = 2;

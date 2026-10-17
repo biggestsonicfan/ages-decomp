@@ -39,10 +39,10 @@ undefined8 coli_cont_cop(long param_1)
   FUN_0018df40(uStack_3c);
   FUN_0018df40(fStack_38);
   piVar1->g[7] = uRam016b75d4;
-  FUN_001dcc00(0);
+  calc_attack_flag(0);
   uStack_44 = piVar1->g[3];
   piVar1->g[7] = uRam016b75d8;
-  FUN_001dcc00(0);
+  calc_attack_flag(0);
   uStack_34 = piVar1->g[3];
   piVar1->g[7] = uRam016b75d4;
   sysMemReadB(&bStack_1,piVar1->g[7] + 0x821);
@@ -56,14 +56,14 @@ undefined8 coli_cont_cop(long param_1)
   FUN_0018df40(uStack_34);
   FUN_0018df40(uStack_24);
   FUN_0018df40(fStack_20);
-  FUN_001dca80(0);
+  coli_ram_init(0);
   piVar1->g[7] = uRam016b75d4;
   piVar1->g[8] = uRam016b75d8;
-  FUN_001dcec0(0);
+  area_coli(0);
   piVar1->g[7] = uRam016b75d8;
   piVar1->g[8] = uRam016b75d4;
-  FUN_001dcec0(0);
-  FUN_001dc200(0);
+  area_coli(0);
+  decide_coli_kind(0);
   piVar1->g[7] = uRam016b75d4;
   sysMemReadW(&fStack_18,piVar1->g[7] + 0x1a4);
   if (((uint)fStack_18 & 0x20000000) == 0) {
@@ -73,8 +73,8 @@ undefined8 coli_cont_cop(long param_1)
     uVar2 = piVar1->g[6];
     if ((uVar2 & 1) != 0) {
 LAB_001dc170:
-      FUN_001e0a80(0);
-      FUN_001df280(auStack_50);
+      decide_dir(0);
+      coli_recalc_pos(auStack_50);
       goto LAB_001dbfa4;
     }
     if ((uVar2 & 0x20) == 0) {
@@ -139,7 +139,7 @@ joined_r0x001dc164:
   }
   else {
 LAB_001dbdc8:
-    FUN_001e0a80(0);
+    decide_dir(0);
   }
   piVar1->g[7] = uRam016b75d4;
   sysMemReadW(&uStack_24,piVar1->g[7] + 0x77c);
@@ -178,7 +178,7 @@ LAB_001dbdc8:
   sysMemWriteW(piVar1->g[0xd] + 0xf8,piVar1->g + 5);
   fStack_18 = 4.0;
   piVar1->g[5] = (uint)((float)puStack_14 / 4.0);
-  FUN_001df280(auStack_50);
+  coli_recalc_pos(auStack_50);
 LAB_001dbfa4:
   if (param_1 != 0) {
     i960ReturnProc();

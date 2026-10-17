@@ -12,7 +12,7 @@ It covers the code that runs the arcade games on the console. Like Sonic Gems Co
 
 Every file is Ghidra's decompiler output for one function, with a header comment. Nothing is hand-cleaned and nothing builds. It's a reference for reading what each function does, next to the arcade original. The conversion work is in [ages-c](https://github.com/biggestsonicfan/ages-c).
 
-Virtua Fighter 2's executable keeps its symbol table (6,965 symbols, CodeWarrior), so its functions carry Sega's own names (`sysCopPatchCalcUnitMat`, `cprMtxInitialize`...). Fighting Vipers' executable is stripped. Its names come from two places: matching its code against VF2's, and the arcade function each translation replaces.
+Virtua Fighter 2's executable keeps its symbol table (6,965 symbols, CodeWarrior), so its functions carry Sega's own names (`sysCopPatchCalcUnitMat`, `cprMtxInitialize`...). Fighting Vipers' executable is stripped. Its names come from matching its code against VF2's, and from the arcade function each translation replaces.
 
 ## Layout
 
@@ -63,7 +63,8 @@ Both executables were loaded into Ghidra 12.1.4 with [ghidra-emotionengine-reloa
 4. **The coprocessor.** `copExec` dispatches through `g_JumpTbl`, 16 bytes a command: handler, argument words, reply bytes and a pointer to the firmware name string.
 5. **FV's names.**
    - Every function was hashed with its jump targets and 16-bit immediates masked. Hashes unique in both programs matched first (1,081). Equal hash groups then paired in address order (405), then call lists propagated matches (333), then runs between matches of the same length and size were filled (288), then call lists were aligned (5). That's 2,112 of 3,163 functions (`names_from_vf2.tsv`, with the method for each).
-   - The 46 `FN` roots are named after the arcade function at their patch site, from a labelled IDA database of `fvipers`. Each root's calls were then lined up against its arcade original's calls. Only game-code calls count; VU0 matrix calls stand in for COP commands. Where the two lists agree on the calls on either side of a gap, and the gaps are the same length, the gap's calls pair up. That named 14 helpers (`names_from_arcade.tsv`). They include `rear_smooth_int`, `get_end_value`, `set_mirror` and `calc_unit_1`, the same set VF2's symbols show its `sysCopPatch*` functions using.
+   - The 46 `FN` roots are named after the arcade function at their patch site, from a labelled IDA database of `fvipers`. Each root's calls were then lined up against its arcade original's calls. Only game-code calls count; VU0 matrix calls stand in for COP commands. Where the two lists agree on the calls on either side of a gap, and the gaps are the same length, the gap's calls pair up. A pair is dropped if either side would get two names. The arcade's calls were found by following its code from each function's start, through jump tables, not from IDA's function ends.
+   - 37 helpers were named by hand, from reading both sides (ages-c's `tools/fv_by_hand.tsv` gives the evidence for each), and went in before the alignment so it could carry on from them. The alignment then named 35 more. `names_from_arcade.tsv` gives the method for each (`root`, `by hand`, `equal`, `aligned`). The names include `rear_smooth_int`, `get_end_value`, `set_mirror` and `calc_unit_1`, the same set VF2's symbols show its `sysCopPatch*` functions using.
 6. **Decompiling.** The runtime calls (`i960GetRegs`, `sysMem*`, `i960SetReg`...) got prototypes first, so the decompiler shows each call's address and value. Then every root, and every game function it calls up to three levels down, was decompiled to its own file.
 
 ## Audit
@@ -73,7 +74,7 @@ All 475 files went through [lizard](https://github.com/terryyin/lizard); the rep
 Known rough edges:
 
 - 62 files carry Ghidra warnings, mostly `Removing unreachable block`.
-- 94 of FV's 112 `FN` helpers and 13 of its COP helpers keep Ghidra's `FUN_<address>` names.
+- 36 of FV's 112 `FN` helpers and 13 of its COP helpers keep Ghidra's `FUN_<address>` names.
 - VF2's i960 program has no labels yet, so VF2's `INDEX.md` gives only the patch addresses.
 - Types are Ghidra's (`undefined4`, `param_1`...), apart from the i960 register file.
 

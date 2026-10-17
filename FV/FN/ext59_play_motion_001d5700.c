@@ -523,7 +523,7 @@ LAB_001d5dc0:
       FUN_0018df40();
       fStack_d4 = (float)FUN_0018e100();
       sysMemWriteW(piVar3->g[7] + 0x30,&fStack_d4);
-      FUN_001dae00(0);
+      fix_hara(0);
       piVar3->g[4] = piVar3->g[4] + 0xd;
       break;
     case 5.60519e-45:
@@ -583,7 +583,7 @@ LAB_001d5dc0:
             }
             if ((uStack_a0 & 5) == 0) {
               piVar3->g[0] = 0;
-              FUN_001f3b00(0);
+              stage_contact_sound(0);
             }
             else {
               fStack_d0 = 1.598556e-38;
@@ -598,18 +598,18 @@ LAB_001d5dc0:
               }
               if ((uStack_a0 & 5) == 0) {
                 piVar3->g[0] = 1;
-                FUN_001f3b00(0);
+                stage_contact_sound(0);
               }
               else {
                 piVar3->g[0] = (uint)fStack_d4;
-                FUN_001f3940(0);
+                check_same_sound(0);
                 sound_request_u(0);
               }
             }
           }
           else {
             piVar3->g[0] = 3;
-            FUN_001f35c0(0);
+            sound_chainlink_hit(0);
           }
         }
       }
@@ -750,7 +750,7 @@ LAB_001d5dc0:
           }
           if ((uStack_a0 & 2) == 0) {
             piVar3->g[0] = (uint)fStack_cc;
-            FUN_001f3940(0);
+            check_same_sound(0);
             sound_request_u(0);
             sysMemReadW(&fStack_a4,(int)fStack_d4 * 4 + 0x6425978);
             if (fStack_a4 == 0.0) {
@@ -839,7 +839,7 @@ LAB_001d6688:
           fStack_c4 = (float)(piVar3->g[7] + 0x1280);
         }
         piVar3->g[0] = (uint)fStack_d4;
-        FUN_001db500(0);
+        check_front_back(0);
         fStack_d4 = (float)piVar3->g[0];
         sysMemReadB(&bStack_21,piVar3->g[7] + 0x1202);
         fStack_cc = (float)(uint)bStack_21;
@@ -1054,7 +1054,7 @@ LAB_001d65e0:
         }
         else if (((uint)fStack_d0 & 0x8000000) == 0) {
           sysMemWriteW(piVar3->g[7] + 0xafc,&fStack_d4);
-          FUN_001db200(0);
+          set_option(0);
         }
       }
       piVar3->g[4] = piVar3->g[4] + 4;

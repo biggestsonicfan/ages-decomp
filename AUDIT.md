@@ -24,18 +24,18 @@ This is Ghidra output, not hand-written code: the complexity is the shape of the
 |---|---|---:|---:|---:|
 | `play_motion` | `FV/FN/ext59_play_motion_001d5700.c` | 201 | 1394 | 9983 |
 | `rob_disp` | `FV/FN/ext65_rob_disp_001ce900.c` | 157 | 1132 | 7679 |
-| `FUN_001dcec0` | `FV/FN/helpers/FUN_001dcec0.c` | 130 | 929 | 6587 |
+| `area_coli` | `FV/FN/helpers/area_coli_001dcec0.c` | 130 | 929 | 6587 |
 | `sysCopPatchSmoothInt` | `VF2/FN/ext51_sysCopPatchSmoothInt_0018c040.c` | 114 | 707 | 6022 |
-| `FUN_001df280` | `FV/FN/helpers/FUN_001df280.c` | 114 | 780 | 9453 |
+| `coli_recalc_pos` | `FV/FN/helpers/coli_recalc_pos_001df280.c` | 114 | 780 | 9453 |
 | `smooth_int` | `FV/FN/helpers/smooth_int_001e4940.c` | 103 | 738 | 4172 |
 | `sysCopPatchGetFrameDat` | `VF2/FN/ext50_sysCopPatchGetFrameDat_00190bc0.c` | 98 | 637 | 6287 |
-| `FUN_001f14c0` | `FV/FN/helpers/FUN_001f14c0.c` | 94 | 538 | 2928 |
+| `koshi_unit_change` | `FV/FN/helpers/koshi_unit_change_001f14c0.c` | 94 | 538 | 2928 |
 | `get_frame_dat` | `FV/FN/helpers/get_frame_dat_001e61c0.c` | 91 | 600 | 3921 |
-| `FUN_001ee200` | `FV/FN/helpers/FUN_001ee200.c` | 86 | 927 | 5643 |
+| `kosi_mino_disp` | `FV/FN/helpers/kosi_mino_disp_001ee200.c` | 86 | 927 | 5643 |
 | `calc_unit_1` | `FV/FN/helpers/calc_unit_1_001e3840.c` | 78 | 552 | 2688 |
 | `rearSmoothInt` | `VF2/FN/helpers/rearSmoothInt_0018f640.c` | 75 | 509 | 4146 |
 | `set_mot_dat` | `FV/FN/ext60_set_mot_dat_001d28c0.c` | 69 | 955 | 7881 |
-| `FUN_001d1240` | `FV/FN/helpers/FUN_001d1240.c` | 68 | 528 | 3172 |
+| `pky_kami_disp` | `FV/FN/helpers/pky_kami_disp_001d1240.c` | 68 | 528 | 3172 |
 | `osage_dsp` | `FV/FN/ext6c_osage_dsp_001fa800.c` | 63 | 502 | 3817 |
 
 ## Longest (top 15 by length)
@@ -46,17 +46,17 @@ This is Ghidra output, not hand-written code: the complexity is the shape of the
 | `calc_unit_mat` | `FV/FN/ext57_calc_unit_mat_001d8500.c` | 45 | 1204 | 9723 |
 | `rob_disp` | `FV/FN/ext65_rob_disp_001ce900.c` | 157 | 1132 | 7679 |
 | `set_mot_dat` | `FV/FN/ext60_set_mot_dat_001d28c0.c` | 69 | 955 | 7881 |
-| `FUN_001dcec0` | `FV/FN/helpers/FUN_001dcec0.c` | 130 | 929 | 6587 |
-| `FUN_001ee200` | `FV/FN/helpers/FUN_001ee200.c` | 86 | 927 | 5643 |
+| `area_coli` | `FV/FN/helpers/area_coli_001dcec0.c` | 130 | 929 | 6587 |
+| `kosi_mino_disp` | `FV/FN/helpers/kosi_mino_disp_001ee200.c` | 86 | 927 | 5643 |
 | `sysCopPatchCalcUnitMat` | `VF2/FN/ext4f_sysCopPatchCalcUnitMat_00192780.c` | 55 | 907 | 8823 |
-| `FUN_001df280` | `FV/FN/helpers/FUN_001df280.c` | 114 | 780 | 9453 |
+| `coli_recalc_pos` | `FV/FN/helpers/coli_recalc_pos_001df280.c` | 114 | 780 | 9453 |
 | `smooth_int` | `FV/FN/helpers/smooth_int_001e4940.c` | 103 | 738 | 4172 |
 | `sysCopPatchSmoothInt` | `VF2/FN/ext51_sysCopPatchSmoothInt_0018c040.c` | 114 | 707 | 6022 |
-| `FUN_001eff40` | `FV/FN/helpers/FUN_001eff40.c` | 61 | 671 | 4540 |
+| `kata_pat_disp` | `FV/FN/helpers/kata_pat_disp_001eff40.c` | 61 | 671 | 4540 |
 | `sysCopPatchGetFrameDat` | `VF2/FN/ext50_sysCopPatchGetFrameDat_00190bc0.c` | 98 | 637 | 6287 |
 | `get_frame_dat` | `FV/FN/helpers/get_frame_dat_001e61c0.c` | 91 | 600 | 3921 |
 | `calc_unit_1` | `FV/FN/helpers/calc_unit_1_001e3840.c` | 78 | 552 | 2688 |
-| `FUN_001f14c0` | `FV/FN/helpers/FUN_001f14c0.c` | 94 | 538 | 2928 |
+| `koshi_unit_change` | `FV/FN/helpers/koshi_unit_change_001f14c0.c` | 94 | 538 | 2928 |
 
 ## Every flagged function
 
@@ -96,42 +96,42 @@ This is Ghidra output, not hand-written code: the complexity is the shape of the
 | `dsp_char_2x3` | `FV/FN/ext8b_dsp_char_2x3_001cb4c0.c` | 9 | 88 |
 | `dsp_num_2x3` | `FV/FN/ext8c_dsp_num_2x3_001cb1c0.c` | 9 | 85 |
 | `tou_disp` | `FV/FN/ext8e_tou_disp_001f5f40.c` | 60 | 517 |
-| `FUN_001cddc0` | `FV/FN/helpers/FUN_001cddc0.c` | 48 | 343 |
-| `FUN_001d1240` | `FV/FN/helpers/FUN_001d1240.c` | 68 | 528 |
-| `FUN_001d2480` | `FV/FN/helpers/FUN_001d2480.c` | 17 | 139 |
-| `FUN_001db640` | `FV/FN/helpers/FUN_001db640.c` | 7 | 114 |
-| `FUN_001dc200` | `FV/FN/helpers/FUN_001dc200.c` | 41 | 224 |
-| `FUN_001dcc00` | `FV/FN/helpers/FUN_001dcc00.c` | 13 | 85 |
-| `FUN_001dcec0` | `FV/FN/helpers/FUN_001dcec0.c` | 130 | 929 |
-| `FUN_001df280` | `FV/FN/helpers/FUN_001df280.c` | 114 | 780 |
-| `FUN_001e0a80` | `FV/FN/helpers/FUN_001e0a80.c` | 19 | 131 |
-| `FUN_001e1700` | `FV/FN/helpers/FUN_001e1700.c` | 34 | 239 |
-| `FUN_001e8980` | `FV/FN/helpers/FUN_001e8980.c` | 19 | 140 |
-| `FUN_001e9580` | `FV/FN/helpers/FUN_001e9580.c` | 38 | 390 |
-| `FUN_001ed4c0` | `FV/FN/helpers/FUN_001ed4c0.c` | 3 | 113 |
-| `FUN_001ed940` | `FV/FN/helpers/FUN_001ed940.c` | 10 | 103 |
-| `FUN_001edd40` | `FV/FN/helpers/FUN_001edd40.c` | 26 | 171 |
-| `FUN_001ee200` | `FV/FN/helpers/FUN_001ee200.c` | 86 | 927 |
-| `FUN_001eff40` | `FV/FN/helpers/FUN_001eff40.c` | 61 | 671 |
-| `FUN_001f14c0` | `FV/FN/helpers/FUN_001f14c0.c` | 94 | 538 |
-| `FUN_001f29c0` | `FV/FN/helpers/FUN_001f29c0.c` | 49 | 316 |
-| `FUN_001fbac0` | `FV/FN/helpers/FUN_001fbac0.c` | 29 | 220 |
-| `FUN_001fc380` | `FV/FN/helpers/FUN_001fc380.c` | 7 | 119 |
-| `FUN_001fc780` | `FV/FN/helpers/FUN_001fc780.c` | 5 | 127 |
-| `FUN_001fcc80` | `FV/FN/helpers/FUN_001fcc80.c` | 3 | 242 |
-| `FUN_001fd640` | `FV/FN/helpers/FUN_001fd640.c` | 8 | 264 |
 | `adj_taikaku` | `FV/FN/helpers/adj_taikaku_001e3340.c` | 23 | 166 |
+| `area_coli` | `FV/FN/helpers/area_coli_001dcec0.c` | 130 | 929 |
+| `calc_attack_flag` | `FV/FN/helpers/calc_attack_flag_001dcc00.c` | 13 | 85 |
+| `calc_kaze` | `FV/FN/helpers/calc_kaze_001fbac0.c` | 29 | 220 |
 | `calc_unit_1` | `FV/FN/helpers/calc_unit_1_001e3840.c` | 78 | 552 |
 | `calc_up_down_damage` | `FV/FN/helpers/calc_up_down_damage_001e1240.c` | 16 | 95 |
+| `coli_recalc_pos` | `FV/FN/helpers/coli_recalc_pos_001df280.c` | 114 | 780 |
+| `copy_option_data` | `FV/FN/helpers/copy_option_data_001db640.c` | 7 | 114 |
+| `decide_coli_kind` | `FV/FN/helpers/decide_coli_kind_001dc200.c` | 41 | 224 |
+| `decide_dir` | `FV/FN/helpers/decide_dir_001e0a80.c` | 19 | 131 |
 | `get_end_value` | `FV/FN/helpers/get_end_value_001e8500.c` | 19 | 140 |
+| `get_fcurve_value_f` | `FV/FN/helpers/get_fcurve_value_f_001e9580.c` | 38 | 390 |
 | `get_frame_dat` | `FV/FN/helpers/get_frame_dat_001e61c0.c` | 91 | 600 |
+| `get_kamae_value` | `FV/FN/helpers/get_kamae_value_001e1700.c` | 34 | 239 |
+| `get_start_value` | `FV/FN/helpers/get_start_value_001e8980.c` | 19 | 140 |
+| `kata_pat_disp` | `FV/FN/helpers/kata_pat_disp_001eff40.c` | 61 | 671 |
+| `koshi_unit_change` | `FV/FN/helpers/koshi_unit_change_001f14c0.c` | 94 | 538 |
+| `kosi_mino_disp` | `FV/FN/helpers/kosi_mino_disp_001ee200.c` | 86 | 927 |
+| `mune_unit_change` | `FV/FN/helpers/mune_unit_change_001f29c0.c` | 49 | 316 |
+| `os_set_coli` | `FV/FN/helpers/os_set_coli_001fcc80.c` | 3 | 242 |
+| `os_set_matrix` | `FV/FN/helpers/os_set_matrix_001fd640.c` | 8 | 264 |
+| `os_set_osage` | `FV/FN/helpers/os_set_osage_001fc380.c` | 7 | 119 |
+| `os_set_tsukene` | `FV/FN/helpers/os_set_tsukene_001fc780.c` | 5 | 127 |
 | `parts_kage_disp` | `FV/FN/helpers/parts_kage_disp_001f4ac0.c` | 11 | 158 |
 | `parts_kage_set_flag` | `FV/FN/helpers/parts_kage_set_flag_001f5080.c` | 21 | 141 |
+| `pky_kami_disp` | `FV/FN/helpers/pky_kami_disp_001d1240.c` | 68 | 528 |
 | `rear_smooth_int` | `FV/FN/helpers/rear_smooth_int_001e7640.c` | 52 | 460 |
 | `rob_kabe_set_matrix` | `FV/FN/helpers/rob_kabe_set_matrix_001ccf40.c` | 39 | 425 |
-| `rob_kage_disp_kabe` | `FV/FN/helpers/rob_kage_disp_kabe_001cc840.c` | 15 | 176 |
+| `rob_kage_disp_ground` | `FV/FN/helpers/rob_kage_disp_ground_001cc840.c` | 15 | 176 |
+| `rob_kage_disp_kabe` | `FV/FN/helpers/rob_kage_disp_kabe_001cddc0.c` | 48 | 343 |
+| `send_tpd` | `FV/FN/helpers/send_tpd_001ed940.c` | 10 | 103 |
+| `set_ashi_ptn` | `FV/FN/helpers/set_ashi_ptn_001d2480.c` | 17 | 139 |
 | `set_mirror` | `FV/FN/helpers/set_mirror_001e8dc0.c` | 2 | 138 |
+| `set_tpd_data` | `FV/FN/helpers/set_tpd_data_001ed4c0.c` | 3 | 113 |
 | `smooth_int` | `FV/FN/helpers/smooth_int_001e4940.c` | 103 | 738 |
+| `tpd_clip_stage` | `FV/FN/helpers/tpd_clip_stage_001edd40.c` | 26 | 171 |
 | `cprCliAreaTableGen` | `VF2/COP/3a_Fn_area_table_gen.c` | 6 | 195 |
 | `cprCliCalcColiFlag` | `VF2/COP/3b_Fn_calc_coli_flag.c` | 20 | 220 |
 | `cprMotCalcUnit2Fast` | `VF2/COP/6b_Fn_calc_unit_2_fast.c` | 5 | 223 |

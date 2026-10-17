@@ -283,7 +283,7 @@ LAB_001e4be8:
   if ((uStack_40 & 2) != 0) goto LAB_001e4d14;
   sysMemReadW(&uStack_68,piVar3->g[7] + 0xbd8);
   piVar3->g[5] = 0x50e000;
-  FUN_001e8980(0);
+  get_start_value(0);
   fStack_58 = 7.427532e-39;
   uStack_44 = 0x14;
   uStack_54 = uStack_68 + 0x690;

@@ -18,23 +18,23 @@ undefined8 set_kamae_ram(long param_1)
   sysMemReadS(&uStack_2,auStack_2c[0]);
   piVar1->g[0] = (uint)uStack_2;
   piVar1->g[3] = iStack_30 + 0x1e0;
-  FUN_001e1700(0);
+  get_kamae_value(0);
   sysMemReadS(&uStack_4,auStack_2c[0] + 2);
   piVar1->g[0] = (uint)uStack_4;
   piVar1->g[3] = iStack_30 + 0x2d0;
-  FUN_001e1700(0);
+  get_kamae_value(0);
   sysMemReadS(&uStack_6,auStack_2c[0] + 0x10);
   piVar1->g[0] = (uint)uStack_6;
   piVar1->g[3] = iStack_30 + 0x3c0;
-  FUN_001e1700(0);
+  get_kamae_value(0);
   sysMemReadS(&uStack_8,auStack_2c[0] + 0x18);
   piVar1->g[0] = (uint)uStack_8;
   piVar1->g[3] = iStack_30 + 0x4b0;
-  FUN_001e1700(0);
+  get_kamae_value(0);
   sysMemReadS(&uStack_a,auStack_2c[0] + 0x54);
   piVar1->g[0] = (uint)uStack_a;
   piVar1->g[3] = iStack_30 + 0x5a0;
-  FUN_001e1700(0);
+  get_kamae_value(0);
   if (param_1 != 0) {
     i960ReturnProc();
   }

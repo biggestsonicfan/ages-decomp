@@ -208,7 +208,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 500,&fStack_c0);
   piVar3->g[0] = 0;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x800101;
   FUN_0018df40();
   puStack_b4 = (undefined *)0x3000606;
@@ -245,7 +245,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x200,&fStack_c0);
   piVar3->g[0] = 1;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x800101;
   FUN_0018df40();
   puStack_b4 = (undefined *)0x3000606;
@@ -299,7 +299,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x20c,&fStack_c0);
   piVar3->g[0] = 2;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x1000202;
   FUN_0018df40();
   puStack_b4 = (undefined *)0x800101;
@@ -333,7 +333,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x218,&fStack_c0);
   piVar3->g[0] = 3;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x3000606;
   FUN_0018df40();
   sysMemReadT(&fStack_c0,piVar3->g[7] + 0xb0);
@@ -363,7 +363,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x224,&fStack_c0);
   piVar3->g[0] = 4;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x3000606;
   FUN_0018df40();
   sysMemReadT(&fStack_c0,piVar3->g[7] + 0xbc);
@@ -410,7 +410,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x230,&fStack_c0);
   piVar3->g[0] = 5;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x1000202;
   FUN_0018df40();
   puStack_b4 = (undefined *)0x3000606;
@@ -442,7 +442,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x23c,&fStack_c0);
   piVar3->g[0] = 6;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x3000606;
   FUN_0018df40();
   sysMemReadT(&fStack_c0,piVar3->g[7] + 0xd4);
@@ -472,7 +472,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x248,&fStack_c0);
   piVar3->g[0] = 7;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x3000606;
   FUN_0018df40();
   sysMemReadT(&fStack_c0,piVar3->g[7] + 0xe0);
@@ -519,7 +519,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x254,&fStack_c0);
   piVar3->g[0] = 8;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x1000202;
   FUN_0018df40();
   puStack_b4 = (undefined *)0x3000606;
@@ -573,7 +573,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x260,&fStack_c0);
   piVar3->g[0] = 9;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   piVar3->r[1] = piVar3->r[1] + 4;
   sysMemWriteW(piVar3->r[1] - 4,&iStack_e4);
   piVar3->r[1] = piVar3->r[1] + 0x10;
@@ -808,7 +808,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x26c,&fStack_c0);
   piVar3->g[0] = 10;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x800101;
   FUN_0018df40();
   piVar3->r[1] = piVar3->r[1] + 4;
@@ -893,7 +893,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x278,&fStack_c0);
   piVar3->g[0] = 0xb;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x3000606;
   FUN_0018df40();
   sysMemReadT(&fStack_c0,piVar3->g[7] + 0x110);
@@ -949,7 +949,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x284,&fStack_c0);
   piVar3->g[0] = 0xc;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x1000202;
   FUN_0018df40();
   puStack_b4 = (undefined *)0x3000606;
@@ -981,7 +981,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x290,&fStack_c0);
   piVar3->g[0] = 0xd;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x800101;
   FUN_0018df40();
   piVar3->r[1] = piVar3->r[1] + 4;
@@ -1066,7 +1066,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x29c,&fStack_c0);
   piVar3->g[0] = 0xe;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x3000606;
   FUN_0018df40();
   sysMemReadT(&fStack_c0,piVar3->g[7] + 0x134);
@@ -1122,7 +1122,7 @@ undefined8 calc_unit_mat(int param_1)
   FUN_0018e080(&fStack_c0);
   sysMemWriteT(piVar3->g[7] + 0x2a8,&fStack_c0);
   piVar3->g[0] = 0xf;
-  FUN_001daf80(0);
+  set_coli_ball_data(0);
   puStack_b4 = (undefined *)0x1000202;
   FUN_0018df40();
   rob_ball_data_make(0);

@@ -76,15 +76,15 @@ undefined8 rob_kabe_kage_disp(long param_1)
     uStack_14 = uRam016c11c8;
     if ((uRam016c11c8 & 2) == 0) {
       piVar1->g[5] = 6;
-      FUN_001cddc0(0);
+      rob_kage_disp_kabe(0);
     }
     uStack_14 = uRam016c11c8;
     if ((uRam016c11c8 & 1) == 0) {
       piVar1->g[6] = piVar1->g[6] | 0x80000000;
       piVar1->g[5] = 4;
-      FUN_001cddc0(0);
+      rob_kage_disp_kabe(0);
     }
-    rob_kage_disp_kabe(0);
+    rob_kage_disp_ground(0);
   }
 LAB_001cc754:
   if (param_1 != 0) {

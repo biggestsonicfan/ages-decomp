@@ -239,7 +239,7 @@ undefined8 rob_disp(int param_1)
             if ((uStack_50 & 2) == 0) {
               piVar1->g[0] = (uint)fStack_70;
               piVar1->g[1] = (uint)fStack_84;
-              FUN_001d2480(0);
+              set_ashi_ptn(0);
             }
             if ((int)fStack_70 < 6) {
               if (fStack_70 == 7.00649e-45) {
@@ -277,7 +277,7 @@ LAB_001ced20:
               }
               if ((uStack_50 & 2) == 0) {
                 piVar1->g[0] = (uint)fStack_70;
-                FUN_001d2280(0);
+                set_te_ptn(0);
                 fStack_84 = (float)piVar1->g[1];
               }
             }
@@ -294,7 +294,7 @@ LAB_001ced20:
             }
             if ((uStack_50 & 5) == 0) {
               piVar1->g[0] = (uint)fStack_84;
-              FUN_001f29c0(0);
+              mune_unit_change(0);
               fStack_84 = (float)piVar1->g[0];
             }
             if ((int)fStack_70 < 10) {
@@ -310,7 +310,7 @@ LAB_001ced20:
             }
             if ((uStack_50 & 5) == 0) {
               piVar1->g[0] = (uint)fStack_84;
-              FUN_001f14c0(0);
+              koshi_unit_change(0);
               fStack_84 = (float)piVar1->g[0];
             }
             fStack_54 = 2.21685e-42;
@@ -471,7 +471,7 @@ LAB_001ceef8:
               sysMemWriteW(piVar1->r[1] - 4,piVar1->g + 0xd);
               piVar1->r[1] = piVar1->r[1] + 4;
               sysMemWriteW(piVar1->r[1] - 4,piVar1->g + 0xe);
-              FUN_001eff40(0);
+              kata_pat_disp(0);
               sysMemReadW(piVar1->g + 0xe,piVar1->r[1] - 4);
               piVar1->r[1] = piVar1->r[1] - 4;
               sysMemReadW(piVar1->g + 0xd,piVar1->r[1] - 4);
@@ -556,7 +556,7 @@ LAB_001ceef8:
               sysMemReadS(&uStack_22,piVar1->g[7] + 0x1f48);
               fStack_84 = (float)(uint)uStack_22;
               if ((uStack_22 & 4) != 0) {
-                FUN_001d1240(0);
+                pky_kami_disp(0);
               }
               break;
             case 1.26117e-44:
@@ -652,7 +652,7 @@ LAB_001d0070:
               sysMemWriteW(piVar1->r[1] - 4,piVar1->g + 0xd);
               piVar1->r[1] = piVar1->r[1] + 4;
               sysMemWriteW(piVar1->r[1] - 4,piVar1->g + 0xe);
-              FUN_001ee200(0);
+              kosi_mino_disp(0);
               sysMemReadW(piVar1->g + 0xe,piVar1->r[1] - 4);
               piVar1->r[1] = piVar1->r[1] - 4;
               sysMemReadW(piVar1->g + 0xd,piVar1->r[1] - 4);
@@ -674,7 +674,7 @@ LAB_001d0070:
               sysMemReadW(&fStack_84,piVar1->r[1] - 4);
               piVar1->r[1] = piVar1->r[1] - 4;
             }
-            FUN_001db640(0);
+            copy_option_data(0);
             sysMemReadS(&uStack_2a,piVar1->g[7] + 0x78a);
             fStack_80 = (float)(uint)uStack_2a;
             if (uStack_2a == 0) {
@@ -685,7 +685,7 @@ LAB_001d0070:
             }
             if ((uStack_50 & 2) == 0) {
               piVar1->g[0] = (uint)fStack_70;
-              FUN_001d1000(0);
+              option_control(0);
               uStack_78 = piVar1->g[7] + 0x788;
               sysMemReadW(&fStack_54,piVar1->g[7]);
               if (((uint)fStack_54 & 0x8000000) != 0) {
@@ -1117,7 +1117,7 @@ LAB_001cf918:
             FUN_0018df40();
           }
           piVar1->g[0] = (uint)fStack_70;
-          FUN_001d1000(0);
+          option_control(0);
           if ((uint)fStack_70 < 2) {
             if (fStack_70 == 1.4013e-45) {
               uStack_50 = 2;

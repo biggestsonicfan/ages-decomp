@@ -98,7 +98,7 @@ LAB_001e6c00:
                          uStack_28);
       fStack_2c = (float)(uint)((int)fStack_50 - (int)fStack_4c);
       piVar1->g[6] = (uint)(fStack_30 / fStack_2c);
-      FUN_001e9580(0);
+      get_fcurve_value_f(0);
       goto LAB_001e632c;
     }
 LAB_001e6c4c:
@@ -117,7 +117,7 @@ LAB_001e6c4c:
 LAB_001e6d0c:
       piVar3 = i960GetRegs();
       piVar3->g[6] = (uint)(float)piVar3->g[6];
-      FUN_001e9580(0);
+      get_fcurve_value_f(0);
       goto LAB_001e632c;
     }
     sysMemReadB(&bStack_3,piVar1->g[7] + 0x19f);
@@ -137,7 +137,7 @@ LAB_001e6d0c:
     sysMemReadB(&bStack_4,piVar1->g[7] + 0xbdd);
     puStack_24 = (undefined *)(uint)bStack_4;
     if ((bStack_4 & 1) != 0) goto LAB_001e632c;
-    FUN_001e8980(0);
+    get_start_value(0);
     uVar2 = piVar1->g[7];
   }
   else {
@@ -156,7 +156,7 @@ LAB_001e6d0c:
     piVar1->g[6] = (uint)(float)piVar1->g[6];
     fStack_2c = 0.5;
     piVar1->g[6] = (uint)((float)piVar1->g[6] + 0.5);
-    FUN_001e9580(0);
+    get_fcurve_value_f(0);
 LAB_001e632c:
     uVar2 = piVar1->g[7];
   }

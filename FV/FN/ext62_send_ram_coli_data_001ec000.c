@@ -4,10 +4,10 @@ undefined8 send_ram_coli_data(long param_1)
 
 {
   i960GetRegs();
-  FUN_001ec580(0);
+  set_coli_ball_init(0);
   send_coli_ball_R(0);
-  FUN_001ec380(0);
-  FUN_001ec180(0);
+  send_ball_to_unit(0);
+  send_ball_to_unit2(0);
   if (param_1 != 0) {
     i960ReturnProc();
   }

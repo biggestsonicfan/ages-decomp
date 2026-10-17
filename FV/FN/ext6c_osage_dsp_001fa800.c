@@ -222,7 +222,7 @@ LAB_001faa5c:
       sysMemWriteW(piVar2->g[0xd],&puStack_14);
     }
   }
-  FUN_001fbac0(0);
+  calc_kaze(0);
   puStack_44 = (undefined *)0x0;
   sysMemWriteW(piVar2->g[0xd] + 0x144,&puStack_44);
   puStack_14 = (undefined *)0x54;
@@ -243,19 +243,19 @@ LAB_001faa5c:
     if ((uStack_10 & 2) != 0) break;
     switch(puStack_44) {
     case (undefined *)0x1:
-      FUN_001fd640(0);
+      os_set_matrix(0);
       break;
     case (undefined *)0x2:
-      FUN_001fcc80(0);
+      os_set_coli(0);
       break;
     case (undefined *)0x3:
-      FUN_001fcb80(0);
+      os_set_etc(0);
       break;
     case (undefined *)0x4:
-      FUN_001fc780(0);
+      os_set_tsukene(0);
       break;
     case (undefined *)0x5:
-      FUN_001fc380(0);
+      os_set_osage(0);
     }
     sysMemReadL(&puStack_40,(int)puStack_44 * 8 + 0x62734);
     piVar2->g[9] = (uint)(puStack_40 + piVar2->g[9]);
@@ -275,10 +275,10 @@ LAB_001faa5c:
   }
   puStack_14 = (undefined *)0x800101;
   FUN_0018df40();
-  FUN_001fe0c0(0);
+  osage_copro(0);
   puStack_14 = (undefined *)0x1000202;
   FUN_0018df40();
-  FUN_001fc1c0(0);
+  set_situation_flags(0);
   sysMemReadB(&bStack_5,piVar2->g[7] + 4);
   puStack_14 = (undefined *)((uint)bStack_5 * 8 + 0x501804);
   sysMemReadW(&puStack_18,(uint)puStack_14);

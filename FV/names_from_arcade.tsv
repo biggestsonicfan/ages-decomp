@@ -9,18 +9,36 @@ fv	arcade name	how
 001cbe40	set_obj_fifo	root
 001cc280	set_obj	root
 001cc540	rob_kabe_kage_disp	root
-001cc840	rob_kage_disp_kabe	equal
+001cc840	rob_kage_disp_ground	by hand
 001ccf40	rob_kabe_set_matrix	equal
+001cddc0	rob_kage_disp_kabe	by hand
 001ce900	rob_disp	root
+001d1000	option_control	by hand
+001d1240	pky_kami_disp	by hand
+001d2280	set_te_ptn	by hand
+001d2480	set_ashi_ptn	by hand
 001d28c0	set_mot_dat	root
 001d4d00	set_motion	root
 001d5700	play_motion	root
 001d8500	calc_unit_mat	root
+001dae00	fix_hara	by hand
+001daf80	set_coli_ball_data	equal
+001db200	set_option	by hand
+001db500	check_front_back	by hand
+001db640	copy_option_data	by hand
 001dbbc0	coli_cont_cop	root
+001dc200	decide_coli_kind	equal
+001dca80	coli_ram_init	equal
+001dcc00	calc_attack_flag	equal
+001dcec0	area_coli	equal
+001df100	total_skill_adder_g8	by hand
+001df280	coli_recalc_pos	equal
+001e0a80	decide_dir	equal
 001e0ec0	kabe_parts_damage	root
 001e1040	rob_ball_data_make	root
 001e1240	calc_up_down_damage	equal
 001e1580	set_kamae_ram	root
+001e1700	get_kamae_value	equal
 001e1e80	calc_rob_angle_cont	root
 001e2a00	calc_rob_angle_int	root
 001e3340	adj_taikaku	equal
@@ -30,7 +48,9 @@ fv	arcade name	how
 001e61c0	get_frame_dat	aligned
 001e7640	rear_smooth_int	equal
 001e8500	get_end_value	equal
+001e8980	get_start_value	by hand
 001e8dc0	set_mirror	equal
+001e9580	get_fcurve_value_f	by hand
 001ea600	send_tex_col_go	root
 001eaa80	change_color_table	root
 001eb280	ScrollCG_Initialize	root
@@ -39,10 +59,37 @@ fv	arcade name	how
 001ebb40	send_coli_ball_R	root
 001ec000	send_ram_coli_data	root
 001ec080	send_init_ram_coli_data	root
+001ec180	send_ball_to_unit2	equal
+001ec380	send_ball_to_unit	equal
+001ec580	set_coli_ball_init	equal
+001ec780	rob1_coli_ball_table_all_init	aligned
+001ec880	rob0_coli_ball_table_all_init	aligned
+001ec980	coli_ucb_num_init	equal
+001ecac0	coli_bu_co_init	equal
+001ecc00	coli_bu_rd_init	equal
+001ecd40	ucb_unit_init	equal
+001ece80	ucb_adr_init	equal
+001ecf80	cb_data_init	equal
 001ed0c0	tex_move_poly	root
+001ed4c0	set_tpd_data	by hand
+001ed940	send_tpd	by hand
+001edd40	tpd_clip_stage	by hand
+001ee200	kosi_mino_disp	by hand
+001eff40	kata_pat_disp	by hand
+001f14c0	koshi_unit_change	by hand
+001f2540	kuc_sukebo_check	equal
+001f2780	kuc_motion	equal
+001f29c0	mune_unit_change	by hand
 001f34c0	efc_face_change_cont	root
+001f35c0	sound_chainlink_hit	by hand
 001f3740	sound_request_u	equal
+001f3940	check_same_sound	by hand
+001f3b00	stage_contact_sound	by hand
 001f3c80	rob_kage_disp_inside	root
+001f4180	rob_kage_set_flag_inout	by hand
+001f4440	rob_kage_set_flag_sub	equal
+001f4600	calc_ext_light_vec	by hand
+001f4880	calc_near_light	by hand
 001f4ac0	parts_kage_disp	aligned
 001f5080	parts_kage_set_flag	aligned
 001f5580	rob_kage_disp_test	root
@@ -56,5 +103,16 @@ fv	arcade name	how
 001f8d40	cage_break_st04	root
 001f9240	line_disp	root
 001f9940	cage_break_calc	root
+001fa4c0	finish_wall_calc_pos	by hand
+001fa6c0	finish_coli_pos_get	by hand
 001fa800	osage_dsp	root
+001fbac0	calc_kaze	by hand
+001fc1c0	set_situation_flags	by hand
+001fc380	os_set_osage	by hand
+001fc780	os_set_tsukene	by hand
+001fcb80	os_set_etc	by hand
+001fcc80	os_set_coli	by hand
+001fd640	os_set_matrix	by hand
+001fe0c0	osage_copro	by hand
+001fe280	os_set_osage_after	by hand
 001fe500	trailer_easy_dsp2	root

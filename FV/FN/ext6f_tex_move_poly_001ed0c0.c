@@ -48,9 +48,9 @@ undefined8 tex_move_poly(long param_1)
       piVar2 = i960GetRegs();
       piVar2->g[0] = 0;
       piVar2->g[9] = uRam016c0de8;
-      FUN_001edd40(0);
+      tpd_clip_stage(0);
       piVar2->g[9] = 0;
-      FUN_001edd40(0);
+      tpd_clip_stage(0);
       if (piVar1->g[0] == 0) {
         uStack_10 = 2;
       }
@@ -58,13 +58,13 @@ undefined8 tex_move_poly(long param_1)
         uStack_10 = 4;
       }
       if ((uStack_10 & 2) == 0) {
-        FUN_001ed4c0(0);
+        set_tpd_data(0);
       }
       uStack_1c = 0x24;
       piVar1->g[6] = piVar1->g[6] + 0x24;
       piVar1->g[5] = piVar1->g[5] + 1;
     }
-    FUN_001ed940(0);
+    send_tpd(0);
     piVar1->g[5] = 0;
     while( true ) {
       uStack_18 = uRam016c4dd4;
