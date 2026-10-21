@@ -1,4 +1,4 @@
-/* EXT 51: sysCopPatchSmoothInt @ 0018c040; patched over i960 027130 */
+/* EXT 51: sysCopPatchSmoothInt @ 0018c040; patched over i960 027130 (arcade smooth_int) */
 
 /* WARNING: Heritage AFTER dead removal. Example location: s0xffffffd0 : 0x0018c32c */
 /* WARNING: Type propagation algorithm not settling */

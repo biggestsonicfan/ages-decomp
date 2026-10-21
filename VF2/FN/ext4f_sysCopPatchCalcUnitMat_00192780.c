@@ -1,4 +1,4 @@
-/* EXT 4f: sysCopPatchCalcUnitMat @ 00192780; patched over i960 016504 */
+/* EXT 4f: sysCopPatchCalcUnitMat @ 00192780; patched over i960 016504 (arcade calc_unit_mat) */
 
 undefined4 sysCopPatchCalcUnitMat(void)
 

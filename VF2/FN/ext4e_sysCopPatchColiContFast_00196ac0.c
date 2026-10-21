@@ -1,4 +1,4 @@
-/* EXT 4e: sysCopPatchColiContFast @ 00196ac0; patched over i960 023524 */
+/* EXT 4e: sysCopPatchColiContFast @ 00196ac0; patched over i960 023524 (arcade coli_cont_cop) */
 
 undefined4 sysCopPatchColiContFast(void)
 
