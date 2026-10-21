@@ -1,4 +1,4 @@
-/* EXT 59: sysCopSetObjSame @ 00197a80; patched over i960 007dbc */
+/* EXT 59: sysCopSetObjSame @ 00197a80; patched over i960 007dbc (arcade set_obj+15c) */
 
 undefined4 sysCopSetObjSame(void)
 

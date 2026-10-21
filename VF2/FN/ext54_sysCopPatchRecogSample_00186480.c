@@ -1,4 +1,4 @@
-/* EXT 54: sysCopPatchRecogSample @ 00186480; patched over i960 052398 */
+/* EXT 54: sysCopPatchRecogSample @ 00186480; patched over i960 052398 (arcade recog_sample+20) */
 
 undefined4 sysCopPatchRecogSample(void)
 

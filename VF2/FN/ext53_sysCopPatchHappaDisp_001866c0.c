@@ -1,4 +1,4 @@
-/* EXT 53: sysCopPatchHappaDisp @ 001866c0; patched over i960 02f134 */
+/* EXT 53: sysCopPatchHappaDisp @ 001866c0; patched over i960 02f134 (arcade happa_disp+264) */
 
 undefined4 sysCopPatchHappaDisp(void)
 

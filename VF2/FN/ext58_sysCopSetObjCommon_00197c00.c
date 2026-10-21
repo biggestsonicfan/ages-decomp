@@ -1,4 +1,4 @@
-/* EXT 58: sysCopSetObjCommon @ 00197c00; patched over i960 007d68, 007da8 */
+/* EXT 58: sysCopSetObjCommon @ 00197c00; patched over i960 007d68, 007da8 (arcade set_obj+108) */
 
 void sysCopSetObjCommon(void)
 

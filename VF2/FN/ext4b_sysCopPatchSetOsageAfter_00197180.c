@@ -1,4 +1,4 @@
-/* EXT 4b: sysCopPatchSetOsageAfter @ 00197180; patched over i960 06539c */
+/* EXT 4b: sysCopPatchSetOsageAfter @ 00197180; patched over i960 06539c (arcade osage_copro+18) */
 
 undefined4 sysCopPatchSetOsageAfter(void)
 

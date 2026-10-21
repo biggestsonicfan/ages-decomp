@@ -1,4 +1,4 @@
-/* EXT 52: sysCopPatchOsageDsp @ 0018bf40; patched over i960 0644ec */
+/* EXT 52: sysCopPatchOsageDsp @ 0018bf40; patched over i960 0644ec (arcade osage_dsp+260) */
 
 undefined4 sysCopPatchOsageDsp(void)
 

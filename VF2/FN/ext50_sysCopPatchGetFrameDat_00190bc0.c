@@ -1,4 +1,4 @@
-/* EXT 50: sysCopPatchGetFrameDat @ 00190bc0; patched over i960 028184 */
+/* EXT 50: sysCopPatchGetFrameDat @ 00190bc0; patched over i960 028184 (arcade get_frame_dat) */
 
 undefined4 sysCopPatchGetFrameDat(void)
 
